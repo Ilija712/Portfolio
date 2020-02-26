@@ -1,0 +1,164 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: frizQuadrata;
+  src: url(../fonts/frizQuadrata.ttf);
+}
+
+.textFont {
+  font-family: frizQuadrata;
+  color: #212121;
+}
+
+.center {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dirCol {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.justifySB {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justifyEnd {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.alignCenter {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btnPadding {
+  padding: 50%;
+}
+
+ul {
+  width: 50%;
+}
+
+ul li a {
+  padding: 30.5px 40px;
+  background-color: #EEEEEE;
+}
+
+ul li a:hover {
+  border-top: 1px solid #212121;
+}
+
+.logo {
+  font-size: 70px;
+  background: #EEEEEE;
+}
+
+.textSize1 {
+  font-size: 20px;
+}
+
+.botMarg {
+  width: 100%;
+  border-bottom: 1px solid #212121;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 50;
+  top: 0px;
+  background: #ffffff;
+}
+
+.dropMenu {
+  display: none;
+}
+
+.dropMenu button {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 50px;
+}
+
+.dropMenu button:focus + ul {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.dropMenu ul {
+  position: absolute;
+  top: 87px;
+  right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dropMenu ul li {
+  background-color: #EEEEEE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dropMenu ul li a {
+  padding: 0px 0px;
+  font-size: 30px;
+}
+
+.dropMenu ul li a:hover {
+  border-top: 0px;
+}
+
+.temp {
+  height: 800vh;
+  background-color: blue;
+}
+
+#temp2 {
+  height: 300vh;
+  background-color: red;
+}
+
+@media only screen and (max-width: 780px) {
+  ul li a {
+    padding: 30.5px 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .invis {
+    display: none;
+  }
+  .dropMenu {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-decoration: none;
+}
+@font-face{
+    font-family: frizQuadrata;
+    src: url(../fonts/frizQuadrata.ttf);
+}
+.textFont{
+    font-family: frizQuadrata;
+    color: #212121;
+}
+.center{
+    width: 80%;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.dirCol{
+    flex-direction: column;
+}
+.justifySB{
+    justify-content: space-between;
+}
+.justifyEnd{
+    justify-content: flex-end;
+}
+.alignCenter{
+    align-items: center;
+}
+.btnPadding{
+    padding: 50%;
+}
+ul{
+    width: 50%;
+    li{
+
+        a{
+            padding: 30.5px 40px;
+            background-color: #EEEEEE;
+            &:hover{
+                border-top: 1px solid #212121;
+            }
+        }
+    }
+}
+.logo{
+    font-size: 70px;
+    background: #EEEEEE;
+}
+.textSize1{
+    font-size: 20px;
+}
+.botMarg{
+    width: 100%;
+    border-bottom: 1px solid #212121;
+    position: sticky;
+    z-index: 50;
+    top: 0px;
+    background: #ffffff;
+}
+.dropMenu{
+    display:none;
+    button{
+        background: none;
+        border: none;
+        outline: none;
+        font-size: 50px;
+        &:focus + ul{
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+    ul{
+        position: absolute;
+        top: 87px;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        pointer-events: none;
+        li{
+            background-color: #EEEEEE;
+            display: flex;
+            justify-content: center;
+            a{
+                padding: 0px 0px;
+                font-size: 30px;
+                &:hover{
+                    border-top: 0px;
+                }
+            }
+        }
+    }
+}
+.temp{
+    height: 800vh;
+    background-color: blue;
+}
+#temp2{
+    height: 300vh;
+    background-color: red;
+}
+@media only screen and (max-width: 780px){
+    ul{
+        li{
+            a{
+                padding: 30.5px 10px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 480px){
+    .invis{
+        display: none;
+    }
+    .dropMenu{
+        display: block;
+    }
+}
