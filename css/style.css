@@ -45,10 +45,22 @@
           justify-content: flex-end;
 }
 
+.justifyCenter {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .alignCenter {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.alignEnd {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .btnPadding {
@@ -91,6 +103,10 @@ ul li a:hover {
   font-size: 25px;
 }
 
+.textSize5 {
+  font-size: 3vw;
+}
+
 .botMarg {
   width: 100%;
   border-bottom: 1px solid #212121;
@@ -106,7 +122,6 @@ ul li a:hover {
 }
 
 main {
-  height: 900px;
   background-image: url("../img/bg1.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -114,6 +129,7 @@ main {
 
 .topP {
   padding-top: 13vw;
+  padding-bottom: 24vw;
 }
 
 .title {
@@ -122,7 +138,47 @@ main {
   display: inline-block;
   border-radius: 2vw;
   padding: 1%;
-  width: 44%;
+  width: 47%;
+}
+
+.stick {
+  width: 50%;
+  height: 5vw;
+  margin: 2vw 0px;
+  background: #EEEEEE;
+  border: 1px solid #212121;
+  border-radius: 1vw;
+}
+
+.innerStick {
+  background: #212121;
+  width: 50%;
+  height: 4vw;
+  border-radius: 0.5vw 0 0 0.5vw;
+  margin-left: 0.5vw;
+}
+
+.percent80 {
+  width: 80%;
+}
+
+.percent70 {
+  width: 70%;
+}
+
+.percent40 {
+  width: 40%;
+}
+
+article {
+  background: #EEEEEE;
+}
+
+.skill {
+  font-family: Oxanium;
+  color: #EEEEEE;
+  padding-left: 0.5vw;
+  font-weight: 1;
 }
 
 @media only screen and (max-width: 780px) {
@@ -148,7 +204,6 @@ main {
     font-size: 55px;
   }
   main {
-    height: 480px;
     background-image: url("../img/bg3.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
