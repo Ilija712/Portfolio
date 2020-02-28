@@ -6,12 +6,12 @@
 }
 
 @font-face {
-  font-family: frizQuadrata;
-  src: url(../fonts/frizQuadrata.ttf);
+  font-family: Oxanium;
+  src: url(../fonts/Oxanium.ttf);
 }
 
 .textFont {
-  font-family: frizQuadrata;
+  font-family: Oxanium;
   color: #212121;
 }
 
@@ -60,21 +60,35 @@ ul {
 }
 
 ul li a {
-  padding: 30.5px 40px;
-  background-color: #EEEEEE;
+  padding: 34px 40px;
 }
 
 ul li a:hover {
-  border-top: 1px solid #212121;
+  background: #BDBDBD;
 }
 
 .logo {
   font-size: 70px;
-  background: #EEEEEE;
+}
+
+.logo:hover {
+  background: #BDBDBD;
 }
 
 .textSize1 {
   font-size: 20px;
+}
+
+.textSize2 {
+  font-size: 35px;
+}
+
+.textSize3 {
+  font-size: 5vw;
+}
+
+.textSize4 {
+  font-size: 25px;
 }
 
 .botMarg {
@@ -84,72 +98,36 @@ ul li a:hover {
   position: sticky;
   z-index: 50;
   top: 0px;
-  background: #ffffff;
+  background-color: #EEEEEE;
 }
 
-.dropMenu {
+.invIcon {
   display: none;
 }
 
-.dropMenu button {
-  background: none;
-  border: none;
-  outline: none;
-  font-size: 50px;
+main {
+  height: 900px;
+  background-image: url("../img/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
-.dropMenu button:focus + ul {
-  opacity: 1;
-  pointer-events: all;
+.topP {
+  padding-top: 13vw;
 }
 
-.dropMenu ul {
-  position: absolute;
-  top: 87px;
-  right: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.dropMenu ul li {
+.title {
   background-color: #EEEEEE;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.dropMenu ul li a {
-  padding: 0px 0px;
-  font-size: 30px;
-}
-
-.dropMenu ul li a:hover {
-  border-top: 0px;
-}
-
-.temp {
-  height: 800vh;
-  background-color: blue;
-}
-
-#temp2 {
-  height: 300vh;
-  background-color: red;
+  opacity: 0.5;
+  display: inline-block;
+  border-radius: 2vw;
+  padding: 1%;
+  width: 44%;
 }
 
 @media only screen and (max-width: 780px) {
   ul li a {
-    padding: 30.5px 10px;
+    padding: 34px 10px;
   }
 }
 
@@ -157,8 +135,23 @@ ul li a:hover {
   .invis {
     display: none;
   }
-  .dropMenu {
+  .trueWidth {
+    width: 100%;
+  }
+  .invIcon {
     display: block;
+  }
+  ul li a {
+    padding: 22px 10px;
+  }
+  .logo {
+    font-size: 55px;
+  }
+  main {
+    height: 480px;
+    background-image: url("../img/bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
