@@ -158,6 +158,10 @@ main {
   margin-left: 0.5vw;
 }
 
+.percent90 {
+  width: 90%;
+}
+
 .percent80 {
   width: 80%;
 }
@@ -166,8 +170,8 @@ main {
   width: 70%;
 }
 
-.percent40 {
-  width: 40%;
+.percent60 {
+  width: 60%;
 }
 
 article {
@@ -181,9 +185,61 @@ article {
   font-weight: 1;
 }
 
+@media only screen and (max-width: 1100px) {
+  main {
+    background-image: url("../img/bg4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .topP {
+    padding-top: 20vw;
+    padding-bottom: 50vw;
+  }
+  .stick {
+    width: 60%;
+    height: 6vw;
+    margin: 3vw 0px;
+  }
+  .innerStick {
+    height: 5vw;
+  }
+  .textSize5 {
+    font-size: 4vw;
+  }
+}
+
 @media only screen and (max-width: 780px) {
   ul li a {
     padding: 34px 10px;
+  }
+  main {
+    background-image: url("../img/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .topP {
+    padding-top: 30vw;
+    padding-bottom: 70vw;
+  }
+  .stick {
+    width: 70%;
+    height: 7vw;
+    margin: 4vw 0px;
+  }
+  .innerStick {
+    height: 6vw;
+  }
+  .textSize5 {
+    font-size: 5vw;
+  }
+  .title {
+    width: 73%;
+  }
+  .title h1 {
+    font-size: 8vw;
+  }
+  .title h2 {
+    font-size: 8vw;
   }
 }
 
@@ -207,6 +263,26 @@ article {
     background-image: url("../img/bg3.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+  }
+  .title {
+    width: 80%;
+  }
+  .title h1 {
+    font-size: 9vw;
+  }
+  .title h2 {
+    font-size: 9vw;
+  }
+  .stick {
+    width: 80%;
+    height: 8vw;
+    margin: 5vw 0px;
+  }
+  .innerStick {
+    height: 7vw;
+  }
+  .textSize5 {
+    font-size: 6vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
