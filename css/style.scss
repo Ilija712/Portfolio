@@ -28,6 +28,12 @@ $dgray: #212121;
 .justifySB{
     justify-content: space-between;
 }
+.justifySA{
+    justify-content: space-around;
+}
+.justifyEV{
+    justify-content: space-evenly;
+}
 .justifyEnd{
     justify-content: flex-end;
 }
@@ -40,8 +46,17 @@ $dgray: #212121;
 .alignEnd{
     align-items: flex-end;
 }
-.btnPadding{
-    padding: 50%;
+.flexWrap{
+    flex-wrap: wrap;
+}
+.textAC{
+    text-align: center;
+}
+.bordRad{
+    border-radius: 1vw;
+}
+.disNone{
+    display:none;
 }
 ul{
     width: 50%;
@@ -75,6 +90,12 @@ ul{
 }
 .textSize5{
     font-size: 3vw;
+}
+.textSize6{
+    font-size: 1vw;
+}
+.textSize7{
+    font-size: 1.6vw;
 }
 .botMarg{
     width: 100%;
@@ -131,14 +152,130 @@ main{
 .percent60{
     width: 60%;
 }
-article{
+.bgColor{
     background: $lgray;
 }
 .skill{
     font-family: $font;
     color:$lgray;
     padding-left: 0.5vw;
-    font-weight: 1;
+    font-weight: normal;
+}
+.margT{
+    margin-top: 2vw;
+}
+.project{
+    
+    a{
+        img{
+            max-width: 100%;
+        }
+    }
+}
+.skills{
+    position: relative;
+    top: -85px;
+}
+#anchor2{
+    position: relative;
+    top: -85px;
+}
+.pr1{
+    padding: 2vw 1vw 2vw 0vw;
+}
+.pr2{
+    padding: 2vw 1vw 2vw 1vw;
+}
+.pr3{
+    padding: 2vw 1vw 2vw 1vw;
+}
+.pr4{
+    padding: 2vw 0vw 2vw 1vw;
+}
+.pr1b{
+    display: none;
+}
+.pr2b{
+    display: none;
+}
+.pr3b{
+    display: none;
+}
+.pr4b{
+    display: none;
+}
+.noPadding{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.portrait{
+    max-width: 100%;
+}
+.about{
+    width: 30vw;
+}
+.temp{
+    height: 5000px;
+}
+@media only screen and(max-width: 1666px){
+    .pr1{
+        display: none;
+    }
+    .pr2{
+        display: none;
+    }
+    .pr3{
+        display: none;
+    }
+    .pr4{
+        display: none;
+    }
+    .pr1b{
+        display: block;
+        padding: 2vw 0;
+    }
+    .pr2b{
+        display: block;
+        padding: 2vw 0;
+    }
+    .pr3b{
+        display: block;
+        padding: 2vw 0;
+    }
+    .pr4b{
+        display: block;
+        padding: 2vw 0;
+    }
+    .textSize6{
+        font-size: 1.5vw;
+    }
+    .textSize7{
+        font-size: 1.7vw;
+    }
+    .about{
+        width: 27vw;
+    }
+}
+@media only screen and(max-width: 1530px){
+    .about{
+        width: 25vw;
+    }
+}
+@media only screen and(max-width: 1450px){
+    .portrait{
+        display:none;
+    }
+    .disBlock{
+        display:block;
+    }
+    .textSize7{
+        font-size: 1.5vw;
+    }
+}
+@media only screen and(max-width: 1249px){
+    .col1{
+        justify-content: center;
+    }
 }
 @media only screen and(max-width: 1100px){
     main{
@@ -160,6 +297,38 @@ article{
     }
     .textSize5{
         font-size: 4vw;
+    }
+    .center2{
+        width: 70%;
+    }
+    .pr1{
+        padding: 2vw 0vw 2vw 0vw;
+    }
+    .pr2{
+        padding: 2vw 0vw 2vw 0vw;
+    }
+    .pr3{
+        padding: 2vw 0vw 2vw 0vw;
+    }
+    .pr4{
+        padding: 2vw 0vw 2vw 0vw;
+    }
+    .textSize6{
+        font-size: 2vw;
+    }
+    .disBlock{
+        display: none;
+    }
+    .disBlock2{
+        display: block;
+    }
+    .about{
+        width: 30vw;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .textSize7{
+        font-size: 1.7vw;
     }
 }
 @media only screen and (max-width: 780px){
@@ -198,6 +367,37 @@ article{
         h2{
             font-size: 8vw;
         }
+    }
+    .textSize6{
+        font-size: 2.5vw;
+    }
+    .noHobby{
+        display: none;
+    }
+    .about{
+        width: 50vw;
+    }
+    .textSize7{
+        font-size: 2.2vw;
+    }
+}
+@media only screen and (max-width: 670px){
+    .about{
+        width: 45vw;
+    }
+    .textSize7{
+        font-size: 2.4vw;
+    }
+}
+@media only screen and (max-width: 590px){
+    .trueWidth1{
+        width: 100%;
+    }
+    .about{
+        width: 60vw;
+    }
+    .textSize7{
+        font-size: 3vw;
     }
 }
 @media only screen and (max-width: 480px){
@@ -244,5 +444,28 @@ article{
     }
     .textSize5{
         font-size: 6vw;
+    }
+    .skills{
+        position: relative;
+        top: -70px;
+    }
+    #anchor2{
+        position: relative;
+        top: -70px;
+    }
+    .textSize6{
+        font-size: 3.5vw;
+    }
+    .about480{
+        flex-direction: column;
+        align-items: center;
+    }
+    .textSize7{
+        text-align: justify;
+        font-size: 4vw;
+    }
+    .about{
+        width: 90%;
+        margin-top: 20px;
     }
 }

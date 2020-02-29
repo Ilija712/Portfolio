@@ -7,6 +7,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="shortcut icon" href="img/favicon1.ico"/>
         <script src="https://kit.fontawesome.com/2ba4a72281.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -18,10 +19,10 @@
                         <a href="index.html" class="textFont textSize1 invis">Home</a><a href="index.html" class="textFont invIcon textSize4"><i class="fas fa-home"></i></a>
                     </li>
                     <li>
-                        <a href="#" class="textFont textSize1 invis">Skills</a><a href="#" class="textFont invIcon textSize4"><i class="fas fa-code"></i></a>
+                        <a href="#anchor" class="textFont textSize1 invis">Skills</a><a href="#anchor" class="textFont invIcon textSize4"><i class="fas fa-code"></i></a>
                     </li>
                     <li>
-                        <a href="#" class="textFont textSize1 invis">Projects</a><a href="#" class="textFont invIcon textSize4"><i class="fas fa-project-diagram"></i></a>
+                        <a href="#anchor2" class="textFont textSize1 invis">Projects</a><a href="#anchor2" class="textFont invIcon textSize4"><i class="fas fa-project-diagram"></i></a>
                     </li>
                     <li>
                         <a href="#" class="textFont textSize1 invis">About</a><a href="#" class="textFont invIcon textSize4"><i class="fas fa-address-card"></i></a>
@@ -37,7 +38,8 @@
                 </div>
             </div>
         </main>
-        <article class="flex dirCol alignCenter">
+        <article class="flex dirCol alignCenter bgColor">
+            <div class="skills" id="anchor"></div>
             <div class="stick flex alignCenter">
                 <div class="innerStick flex alignCenter percent90"><h3 class="skill textSize5">HTML5 | 90%</h3></div>
             </div>
@@ -51,5 +53,61 @@
                 <div class="innerStick flex alignCenter percent60"><h3 class="skill textSize5">Photoshop | 60%</h3></div>
             </div>
         </article>
+        <div class="center center2 flex dirCol justifyEV projects">
+            <div id="anchor2"></div>
+            <div class="margT flex justifyCenter"><p class="textFont textSize3">My Projects</p></div>
+            <div class="flex justifySB col1 flexWrap">
+                <div class="project">
+                    <a href="https://ilija712.github.io/League/" target="_blank">
+                        <figure><img class="pr1" src="img/proj1.jpg" alt="league of legends site"/><figcaption class="pr1 textFont textSize6 noPadding">Website about League of Legends</figcaption></figure>
+                        <figure><img class="pr1b" src="img/proj1b.jpg" alt="league of legends site"/><figcaption class="pr1b textFont textSize6 noPadding">Website about League of Legends</figcaption></figure>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://ilija712.github.io/Portfolio/" target="_blank">
+                        <figure><img class="pr2" src="img/proj2.jpg" alt="Ilija Kostić Portfolio"/><figcaption class="pr2 textFont textSize6 noPadding">My Portfolio website</figcaption></figure>
+                        <figure><img class="pr2b" src="img/proj2b.jpg" alt="Ilija Kostić Portfolio"/><figcaption class="pr2b textFont textSize6 noPadding">My Portfolio website</figcaption></figure>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://ilija712.github.io/League/" target="_blank">
+                        <figure><img class="pr3" src="img/proj1.jpg" alt="league of legends site"/><figcaption class="pr3 textFont textSize6 noPadding">Website about League of Legends</figcaption></figure>
+                        <figure><img class="pr3b" src="img/proj1b.jpg" alt="league of legends site"/><figcaption class="pr3b textFont textSize6 noPadding">Website about League of Legends</figcaption></figure>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://ilija712.github.io/Portfolio/" target="_blank">
+                        <figure><img class="pr4" src="img/proj2.jpg" alt="Ilija Kostić Portfolio"/><figcaption class="pr4 textFont textSize6 noPadding">My Portfolio website</figcaption></figure>
+                        <figure><img class="pr4b" src="img/proj2b.jpg" alt="Ilija Kostić Portfolio"/><figcaption class="pr4b textFont textSize6 noPadding">My Portfolio website</figcaption></figure>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <article class="bgColor margT">
+            <div class="center trueWidth1">
+                <p class="textFont textSize3 textAC">About Me</p>
+                <div class="flex justifySB about480">
+                    <div>
+                        <img class="portrait bordRad" src="img/about.jpg" alt="Ilija Kostić portrait"/>
+                        <img class="bordRad disBlock disNone" src="img/about1.jpg" alt="Ilija Kostić portrait"/>
+                        <img class="bordRad disBlock2 disNone" src="img/about2.jpg" alt="Ilija Kostić portrait"/>
+                    </div>
+                    <div class="about">
+                        <p class="textFont textSize7">My name is Ilija Kostić, I'm a student at "Visoka ICT Škola" in Belgrade. Currently I'm studying web development, 
+                            programming language C and data base management. In my free time I enjoy playing video games, I played Minecraft for 5 years, Osu for 2 years 
+                            and League of Legends for a year. I also enjoy watching anime, I watched over a 100 different series, some of my favorite are My Hero Academia, 
+                            Death Note, Dr. Stone, Durarara, Fate, Hunter x Hunter, Jojo's, One Piece and many others. To conclude I also like watching youtube videos about 
+                            gaming and anime.
+                        </p>
+                    </div>
+                    <div class="noHobby">
+                        <img class="portrait" src="img/hobbies.jpg" alt="logos"/>
+                        <img class="disBlock disNone" src="img/hobbies1.jpg" alt="logos"/>
+                        <img class="disBlock2 disNone" src="img/hobbies2.jpg" alt="logos"/>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="temp"></div>
     </body>
 </html>
