@@ -46,6 +46,12 @@ $dgray: #212121;
 .alignEnd{
     align-items: flex-end;
 }
+.alignSelf{
+    align-self: center;
+}
+.alignSelfEnd{
+    align-self: flex-end;
+}
 .flexWrap{
     flex-wrap: wrap;
 }
@@ -58,14 +64,17 @@ $dgray: #212121;
 .disNone{
     display:none;
 }
-ul{
-    width: 50%;
-    li{
+header{
 
-        a{
-            padding: 34px 40px;
-            &:hover{
-                background: #BDBDBD;
+    ul{
+        width: 50%;
+        li{
+    
+            a{
+                padding: 34px 40px;
+                &:hover{
+                    background: #BDBDBD;
+                }
             }
         }
     }
@@ -180,6 +189,10 @@ main{
     position: relative;
     top: -85px;
 }
+#anchor3{
+    position: relative;
+    top: -85px;
+}
 .pr1{
     padding: 2vw 1vw 2vw 0vw;
 }
@@ -214,8 +227,27 @@ main{
 .about{
     width: 30vw;
 }
-.temp{
-    height: 5000px;
+.cForm{
+    height: 25vw;
+    textarea{
+        resize: none;
+        width: 60%;
+        height: 10vw;
+        outline: none;
+    }
+    input{
+        width: 25%;
+        outline: none;
+    }
+}
+.bord{
+    border: 1px solid $dgray;
+}
+.soc{
+    font-size: 3vw;
+}
+.links{
+    width: 30%;
 }
 @media only screen and(max-width: 1666px){
     .pr1{
@@ -332,10 +364,12 @@ main{
     }
 }
 @media only screen and (max-width: 780px){
-    ul{
-        li{
-            a{
-                padding: 34px 10px;
+    header{
+        ul{
+            li{
+                a{
+                    padding: 34px 10px;
+                }
             }
         }
     }
@@ -380,6 +414,18 @@ main{
     .textSize7{
         font-size: 2.2vw;
     }
+    .cForm{
+        height: 45vw;
+        textarea{
+            width: 90%;
+            height: 15vw;
+            text-align: center;
+        }
+        input{
+            width: 50%;
+            text-align: center;
+        }
+    }
 }
 @media only screen and (max-width: 670px){
     .about{
@@ -399,6 +445,20 @@ main{
     .textSize7{
         font-size: 3vw;
     }
+    .soc480{
+        flex-direction: column;
+        align-items: center;
+    }
+    .soc{
+        font-size: 7vw;
+    }
+    .awe{
+        justify-content: space-evenly;
+    }
+    .links{
+        padding: 2vw 0;
+        width: 90%;
+    }
 }
 @media only screen and (max-width: 480px){
     .invis{
@@ -410,10 +470,12 @@ main{
     .invIcon{
         display: block;
     }
-    ul{
-        li{
-            a{
-                padding: 22px 10px;
+    header{
+        ul{
+            li{
+                a{
+                    padding: 22px 10px;
+                }
             }
         }
     }
@@ -453,6 +515,10 @@ main{
         position: relative;
         top: -70px;
     }
+    #anchor3{
+        position: relative;
+        top: -75px;
+    }
     .textSize6{
         font-size: 3.5vw;
     }
@@ -467,5 +533,17 @@ main{
     .about{
         width: 90%;
         margin-top: 20px;
+    }
+    .cForm{
+        height: 45vw;
+        textarea{
+            width: 90%;
+            height: 15vw;
+            text-align: center;
+        }
+        input{
+            width: 50%;
+            text-align: center;
+        }
     }
 }

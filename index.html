@@ -25,7 +25,7 @@
                         <a href="#anchor2" class="textFont textSize1 invis">Projects</a><a href="#anchor2" class="textFont invIcon textSize4"><i class="fas fa-project-diagram"></i></a>
                     </li>
                     <li>
-                        <a href="#" class="textFont textSize1 invis">About</a><a href="#" class="textFont invIcon textSize4"><i class="fas fa-address-card"></i></a>
+                        <a href="#anchor3" class="textFont textSize1 invis">About</a><a href="#anchor3" class="textFont invIcon textSize4"><i class="fas fa-address-card"></i></a>
                     </li>
                 </ul>
             </header>
@@ -84,6 +84,7 @@
             </div>
         </div>
         <article class="bgColor margT">
+            <div id="anchor3"></div>
             <div class="center trueWidth1">
                 <p class="textFont textSize3 textAC">About Me</p>
                 <div class="flex justifySB about480">
@@ -108,6 +109,40 @@
                 </div>
             </div>
         </article>
-        <div class="temp"></div>
+        <div class="center textAC margT bord bordRad">
+            <p class="textFont textSize3">Contact Me</p>
+            <form class="flex dirCol justifySA alignCenter cForm" action="contact.php" target="_blank" method="post" name="ikcontact">
+                <input class="textFont textSize7 textAC bord bordRad" type="text" name="name" placeholder="Name"/>
+                <input class="textFont textSize7 textAC bord bordRad" type="email" name="email" placeholder="Email"/>
+                <textarea class="textFont textSize7 textAC bord bordRad" name="msg" placeholder="Type your message here..."></textarea>
+                <input class="textFont textSize7 textAC bord bordRad" type="submit" value="Send"/>
+            </form>
+        </div>
+        <footer class="bgColor margT">
+            <div class="center flex justifySB textFont textSize7 soc480">
+                <div class="links flex dirCol justifyEV">
+                    <p class="alignSelf">Social Media</p>
+                    <ul class="flex justifyEV awe">
+                        <li><a class="textFont soc" target="_blank" href="https://www.facebook.com/people/Ilija-Kostic/100003803438809"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a class="textFont soc" target="_blank" href="https://www.youtube.com/channel/UCiLuTRwS7ooi0Bn_UU4HPQw?view_as=subscriber"><i class="fab fa-youtube-square"></i></a></li>
+                        <li><a class="textFont soc" target="_blank" href="https://github.com/Ilija712"><i class="fab fa-github-square"></i></a></li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li class="textAC">Contact Information</li>
+                        <li class="textAC">Phone: 0607011230</li>
+                        <li class="textAC">Email: ilija&#46;kostic&#46;56&#46;19&#64;ict&#46;edu&#46;rs</li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li class="textAC"><a class="textFont" target="_blank" href="https://github.com/Ilija712/Portfolio/blob/master/css/style.css">Css</a></li>
+                        <li class="textAC"><a class="textFont" target="_blank" href="https://github.com/Ilija712/Portfolio/blob/master/css/style.scss">Scss</a></li>
+                        <li class="textAC"><a class="textFont" target="_blank" href="">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
