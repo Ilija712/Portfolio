@@ -353,6 +353,9 @@ main {
     display: block;
     padding: 2vw 0;
   }
+  .project a figure figcaption {
+    padding: 0;
+  }
   .textSize6 {
     font-size: 1.5vw;
   }
